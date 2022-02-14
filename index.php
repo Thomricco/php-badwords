@@ -1,10 +1,13 @@
 <?php 
 
-$varStringa = " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci reprehenderit qui neque accusantium. Aperiam, consequuntur asperiores cumque suscipit repellendus distinctio ipsa officia earum nihil, neque voluptate dolores ea, quibusdam esse. ";
+$varTesto = " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci reprehenderit qui neque accusantium. Aperiam, consequuntur asperiores cumque suscipit repellendus distinctio ipsa officia earum nihil, neque voluptate dolores ea, quibusdam esse. ";
 
-$risultato = trim($varStringa);
+$risultato = trim($varTesto);
 
-var_dump($risultato)
+var_dump($risultato);
+
+$nome = $_GET["name"];
+$cognome = $GET["cognome"];
 
 ?>
 
@@ -19,7 +22,7 @@ var_dump($risultato)
 </head>
 <body>
 
-<?php    ?>
+<h1>Ciao <?php echo $nome; ?> <?php echo $cognome; ?></h1>
 
 
     
