@@ -1,18 +1,19 @@
 <?php 
 
-$varTesto = " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci reprehenderit qui neque accusantium. Aperiam, consequuntur asperiores cumque suscipit repellendus distinctio ipsa officia earum nihil, neque voluptate dolores ea, quibusdam esse. ";
+$varTesto = "le infomazioni sulla privacy sono cambiate";
 
 $risultato = trim($varTesto);
 
 var_dump($risultato);
+//parola passata dall'utente  tramite GET da cdnsurare
+$parolaCensurata = $_GET["ciao"];
+//sostituire con tre *** la parola get passata all'utente
+$testoCensurato = str_replace($parolaCensurata, "***", $varTesto);
 
 $nome = $_GET["nome"];
 $cognome = $_GET["cognome"];
 
-$pass = $_GET["pass"];
-$censura = str_replace($pass, '***', 'pass');
 
-var_dump($censura)
 
 
 
@@ -33,6 +34,11 @@ var_dump($censura)
 
 <p>leggi le info: <?php echo $varTesto ?></p>
 <p>il numero delle parole sono: <?php echo strlen($varTesto) ?></p>
+
+<br>
+
+<p>leggi le info: <?php echo $testoCensurato ?></p>
+<p>il numero delle parole sono: <?php echo strlen($testoCensurato) ?></p>
 
 
 
