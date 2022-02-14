@@ -6,8 +6,15 @@ $risultato = trim($varTesto);
 
 var_dump($risultato);
 
-$nome = $_GET["name"];
-$cognome = $GET["cognome"];
+$nome = $_GET["nome"];
+$cognome = $_GET["cognome"];
+
+$pass = $_GET["pass"];
+$censura = str_replace($pass, '***', 'pass');
+
+var_dump($censura)
+
+
 
 ?>
 
@@ -22,7 +29,11 @@ $cognome = $GET["cognome"];
 </head>
 <body>
 
-<h1>Ciao <?php echo $nome; ?> <?php echo $cognome; ?></h1>
+<h1>Ciao <?php echo $nome; ?> <?php echo $cognome; ?> <?php echo $pass; ?></h1>
+
+<p>leggi le info: <?php echo $varTesto ?></p>
+<p>il numero delle parole sono: <?php echo strlen($varTesto) ?></p>
+
 
 
     
