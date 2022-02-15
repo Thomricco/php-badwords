@@ -4,9 +4,10 @@ $varTesto = "le infomazioni sulla privacy sono cambiate";
 
 $risultato = trim($varTesto);
 
-var_dump($risultato);
+var_dump($_GET);
 //parola passata dall'utente  tramite GET da cdnsurare
-$parolaCensurata = $_GET["ciao"];
+$parolaCensurata = $_GET["parola"];
+var_dump($parolaCensurata);
 //sostituire con tre *** la parola get passata all'utente
 $testoCensurato = str_replace($parolaCensurata, "***", $varTesto);
 
