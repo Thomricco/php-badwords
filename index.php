@@ -31,7 +31,7 @@ $cognome = $_GET["cognome"];
 </head>
 <body>
 
-<h1>Ciao <?php echo $nome; ?> <?php echo $cognome; ?> <?php echo $pass; ?></h1>
+<h1>Ciao <?php echo $nome; ?> <?php echo $cognome; ?> </h1>
 
 <p>leggi le info: <?php echo $varTesto ?></p>
 <p>il numero delle parole sono: <?php echo strlen($varTesto) ?></p>
